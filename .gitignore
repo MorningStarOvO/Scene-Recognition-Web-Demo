@@ -1,7 +1,7 @@
 checkpoint/wideresnet18_places365.pth.tar
 __pycache__
 *.pyc
-CAM/*.jpg
-CAM/*.png
-upload/*.jpg
-upload/*.png
+static/CAM/*.jpg
+static/CAM/*.png
+static/upload/*.jpg
+static/upload/*.png
