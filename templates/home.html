@@ -1,10 +1,10 @@
 <!doctype html>
 <html style="margin: 10px 100px 200px 100px" align=center>
 <body>
-    <h1>Scene Recognition</h1>
-    <img src="static/CogModal.png">
+    <h1 style="font-size:60px">Scene Recognition</h1>
+    <img src="static/CogModal.png" height="300">
 
-    <h2>Upload new File</h2>
+    <h2 style="font-size:45px">Upload new File</h2>
 
     <form action=/upload method=post enctype=multipart/form-data>
         <p><input type=file name=file>
@@ -12,7 +12,7 @@
     </form>
     
     {% if img_test %}
-    <img src="{{img_test}}">
+    <img src="{{img_test}}" height="400">
     {% endif%}
 
     <form action=/question method=post>
@@ -20,15 +20,15 @@
     </form>
 
     {% if IO_predict %}
-    <h2>Predictions</h2>
-    <ul style="margin-left: 300px;" align=left>
+    <h2 style="font-size:45px">Predictions</h2>
+    <ul style="margin-left: 300px; font-size:30px" align=left>
         <li><b>Type of environment</b>: {{IO_predict}}</li>
         <li><b>Scene categories</b>: {{categories_pred}}</li>
         <li><b>Scene attributes</b>: {{attributes_pred}}</li>
-        <li><b>Run time</b>: {{time}} second</li>
+        <li><b>Run time</b>: {{time}} seconds</li>
         <li><b>Informative region for predicting the category is</b>:</li>
     </ul>
-    <img src="{{img_CAM}}">
+    <img src="{{img_CAM}}" height="400">
     {% endif%}
 
 </body>
