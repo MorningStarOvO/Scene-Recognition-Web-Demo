@@ -16,7 +16,7 @@
     {% endif%}
 
     <form action=/question method=post>
-           <input type=submit value=运行><br/>
+           <input type=submit value=run><br/>
     </form>
 
     {% if IO_predict %}
@@ -25,7 +25,7 @@
         <li><b>Type of environment</b>: {{IO_predict}}</li>
         <li><b>Scene categories</b>: {{categories_pred}}</li>
         <li><b>Scene attributes</b>: {{attributes_pred}}</li>
-        <li><b>Run time</b>: {{time}}</li>
+        <li><b>Run time</b>: {{time}} second</li>
         <li><b>Informative region for predicting the category is</b>:</li>
     </ul>
     <img src="{{img_CAM}}">
